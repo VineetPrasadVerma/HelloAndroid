@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vineetprasadverma.helloandroid.MainActivity">
+
+    <ImageView
+        android:id="@+id/image_udacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_udacity"
+        android:scaleType="centerCrop"
+        android:src="@drawable/udacity" />
+
+    <TextView
+        android:id="@+id/text_udacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:fontFamily="monospace"
+        android:text="@string/udacity"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_udacity"
+        android:layout_margin="20dp"
+        android:text="@string/textline"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/text_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_line"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="6650-555-555"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/text_website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_number"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="www.udacity.com"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/text_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_website"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="2465 Latha St,Mountain View,CA 94043"
+        android:textColor="#000000" />
+
+</RelativeLayout>
